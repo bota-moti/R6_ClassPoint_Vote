@@ -10,21 +10,6 @@
 
 ## R6沖縄高専祭高専祭でのクラス杯投票システム
 
-<!-- プロジェクトについて -->
-
-## プロジェクトについて
-
-React、DRF、Terraform を勉強する際に使用できるテンプレート
-
-<!-- プロジェクトの概要を記載 -->
-
-  <p align="left">
-    <br />
-    <!-- プロジェクト詳細にBacklogのWikiのリンク -->
-    <a href="Backlogのwikiリンク"><strong>プロジェクト詳細 »</strong></a>
-    <br />
-    <br />
-
 <p align="right">(<a href="#top">トップへ</a>)</p>
 
 ## 環境
@@ -33,16 +18,11 @@ React、DRF、Terraform を勉強する際に使用できるテンプレート
 
 | 言語・フレームワーク  | バージョン |
 | --------------------- | ---------- |
-| Python                | 3.11.4     |
-| Django                | 4.2.1      |
-| Django Rest Framework | 3.14.0     |
+| PHP                   | 3.11.4     |
+| HTML                  | 4.2.1      |
+| CSS                   | 3.14.0     |
 | MySQL                 | 8.0        |
-| Node.js               | 16.17.0    |
-| React                 | 18.2.0     |
-| Next.js               | 13.4.6     |
-| Terraform             | 1.3.6      |
-
-その他のパッケージのバージョンは pyproject.toml と package.json を参照してください
+| JavaScript            | 16.17.0    |
 
 <p align="right">(<a href="#top">トップへ</a>)</p>
 
