@@ -31,7 +31,6 @@
 | MySQL                 | 8.0        |
 | JavaScript            | 16.17.0    |
 
-<p align="right">(<a href="#top">トップへ</a>)</p>
 
 ## ディレクトリ構成
 <pre>
@@ -44,5 +43,3 @@
 <!-- Treeコマンドを使ってディレクトリ構成を記載 -->
 
 
-
-<p align="right">(<a href="#top">トップへ</a>)</p>
