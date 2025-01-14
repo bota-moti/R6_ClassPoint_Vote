@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 
 if (!empty($_POST)) {
@@ -69,70 +69,50 @@ if (!empty($_POST)) {
 
 
 ?>
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-        <title>クラス杯投票システム</title>
-        <link rel="stylesheet" href="css\style_index.css">
-    </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttons with Transparent Background</title>
+  <link rel="stylesheet" href="./css/style_index.css">
+  
+</head>
+<body>
+  <!-- 背景画像とオーバーレイ -->
+  <div class="background-container">
+    <div class="overlay"></div>
+  </div>
+  <br><br><br><br><br><br>
+  <!-- 上部の説明文 -->
+  <div class="header-text">
+    Welcome to the Button Grid!
+  </div>
+  <br><br><br><br><br><br>
+  <!-- ボタンのグリッド -->
+  
+  <form action="" method="POST" class="button-grid">
+    <button type="submit" class="btn" name="11">1-1</button>
+    <button type="submit" class="btn" name="12">1-2</button>
+    <button type="submit" class="btn" name="13">1-3</button>
+    <button type="submit" class="btn" name="14">1-4</button>
+    <button type="submit" class="btn" name="21">2-1</button>
+    <button type="submit" class="btn" name="22">2-2</button>
+    <button type="submit" class="btn" name="23">2-3</button>
+    <button type="submit" class="btn" name="24">2-4</button>
+    <button type="submit" class="btn" name="3ms">3-ms</button>
+    <button type="submit" class="btn" name="3ic">3-ic</button>
+    <button type="submit" class="btn" name="3mi">3-mi</button>
+    <button type="submit" class="btn" name="3br">3-br</button>
+    <button type="submit" class="btn" name="4ms">4-ms</button>
+    <button type="submit" class="btn" name="4ic">4-ic</button>
+    <button type="submit" class="btn" name="4mi">4-mi</button>
+    <button type="submit" class="btn" name="4br">4-br</button>
+    <button type="submit" class="btn" name="5ms">5-ms</button>
+    <button type="submit" class="btn" name="5ic">5-ic</button>
+    <button type="submit" class="btn" name="5mi">5-mi</button>
+    <button type="submit" class="btn" name="5br">5-br</button>
 
-    <body> 
-        <div class="background-container">
-            <div class="content">  
-                <div class="pic">
-                    <h1>クラス杯投票システム</h1>
-                    <h2>投票したいクラスをタッチしてください</h2>
-                    <form action="" method="POST" class="bottom">
-                        <table>
-                            <tr>
-                                <td><button type="submit" class="btn" name="11">1の1</button></td>
-                                <td><button type="submit" class="btn" name="12">1の2</button></td>
-                                <td><button type="submit" class="btn" name="13">1の3</button></td>
-                                <td><button type="submit" class="btn" name="14">1の4</button></td>
-                            </tr>
-                        </table> 
-                        <br>
-                        <table>
-                            <tr>
-                                <td><button type="submit" class="btn" name="21">2の1</button></td>
-                                <td><button type="submit" class="btn" name="22">2の2</button></td>
-                                <td><button type="submit" class="btn" name="23">2の3</button></td>
-                                <td><button type="submit" class="btn" name="24">2の4</button></td>
-                            </tr>
-                        </table> 
-                        <br>
-                        <table>
-                            <tr>
-                                <td><button type="submit" class="btn" name="3ms">3ms</button></td>
-                                <td><button type="submit" class="btn" name="3ic">3ic</button></td>
-                                <td><button type="submit" class="btn" name="3mi">3mi</button></td>
-                                <td><button type="submit" class="btn" name="3br">3br</button></td>
-                            </tr>
-                        </table> 
-                        <br>
-                        <table>
-                            <tr>
-                                <td><button type="submit" class="btn" name="4ms">4ms</button></td>
-                                <td><button type="submit" class="btn" name="4ic">4ic</button></td>
-                                <td><button type="submit" class="btn" name="4mi">4mi</button></td>
-                                <td><button type="submit" class="btn" name="4br">4br</button></td>
-                            </tr>
-                        </table> 
-                        <br>
-                        <table>
-                            <tr>
-                                <td><button type="submit" class="btn" name="5ms">5ms</button></td>
-                                <td><button type="submit" class="btn" name="5ic">5ic</button></td>
-                                <td><button type="submit" class="btn" name="5mi">5mi</button></td>
-                                <td><button type="submit" class="btn" name="5mi">5br</button></td>
-                            </tr>
-                        </table> 
-                    </form> 
-                </div>
-            </div>
-        </div>
-    </body>
+  </form>
+</body>
 </html>

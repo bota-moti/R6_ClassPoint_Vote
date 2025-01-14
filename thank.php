@@ -4,11 +4,19 @@
 ?>
 <html>
     <head>
-        <body>
-            <?php echo "投票ありがとうございます。"; ?>
-            <meta http-equiv="refresh" content=" 1.2; url=index_home.php">  
-            <!-- //5秒待ってからcount_ClassPint,phpへ移動 -->
-    
-        </body>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+        <title>クラス杯投票システム</title>
+        <link rel="stylesheet" href="css\style_index.css">
     </head>
+    <body>
+        <div class="background-container">
+                <div class="content">  
+                    <div class="pic">
+                        <h1>投票Thank you!!</h1>
+                        <meta http-equiv="refresh" content=" 1.2; url=index_home.php">  
+                    </div>
+                </div>
+        </div>
+    </body>
 </html>
