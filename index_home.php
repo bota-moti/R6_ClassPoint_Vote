@@ -1,67 +1,71 @@
 <?php 
+session_start();
 
+if (!empty($_POST)) {
+    if (isset($_POST['11'])) {    // フォームの内容をセッションで保存
+        $_SESSION['class'] = "1_1";
+    
+    } else if (isset($_POST['12'])) {
+        $_SESSION['class'] = '1_2';
 
-if (isset($_POST['11'])) {    // フォームの内容をセッションで保存
-    header('Location: ./Class_check/1-1_countClassPoint.php');   // check.phpへ移動
-    exit(); //セッションを閉じる
-} else if(isset($_POST['12'])) {
-    header('Location: ./Class_check/1-2_countClassPoint.php');   // check.phpへ移動
-    exit(); //セッションを閉じる
-} else if(isset($_POST['13'])) {
-    header('Location: ./Class_check/1-3_countClassPoint.php');   // check.phpへ移動
-    exit(); //セッションを閉じる
-} else if(isset($_POST['14'])) {
-    header('Location: ./Class_check/1-4_countClassPoint.php');   // check.phpへ移動
-    exit(); //セッションを閉じる
-} else if(isset($_POST['21'])) {
-    header('Location: ./Class_check/2-1_countClassPoint.php');   // check.phpへ移動
-    exit(); //セッションを閉じる
-} else if(isset($_POST['22'])) {
-    header('Location: ./Class_check/2-2_countClassPoint.php');   // check.phpへ移動
-    exit(); //セッションを閉じる
-} else if(isset($_POST['23'])) {
-    header('Location: ./Class_check/2-3_countClassPoint.php');   // check.phpへ移動
-    exit(); //セッションを閉じる
-} else if(isset($_POST['24'])) {
-    header('Location: ./Class_check/2-4_countClassPoint.php');   // check.phpへ移動
-    exit(); //セッションを閉じる
-} else if(isset($_POST['3ms'])) {
-    header('Location: ./Class_check/3-ms_countClassPoint.php');   // check.phpへ移動
-    exit(); //セッションを閉じる
-} else if(isset($_POST['3ic'])) {
-    header('Location: ./Class_check/3-ic_countClassPoint.php');   // check.phpへ移動
-    exit(); //セッションを閉じる
-} else if(isset($_POST['3br'])) {
-    header('Location: ./Class_check/3-br_countClassPoint.php');   // check.phpへ移動
-    exit(); //セッションを閉じる
-} else if(isset($_POST['3mi'])) {
-    header('Location: ./Class_check/3-mi_countClassPoint.php');   // check.phpへ移動
-    exit(); //セッションを閉じる
-} else if(isset($_POST['4ms'])) {
-    header('Location: ./Class_check/4-ms_countClassPoint.php');   // check.phpへ移動
-    exit(); //セッションを閉じる
-} else if(isset($_POST['4ic'])) {
-    header('Location: ./Class_check/4-ic_countClassPoint.php');   // check.phpへ移動
-    exit(); //セッションを閉じる
-} else if(isset($_POST['4br'])) {
-    header('Location: ./Class_check/4-br_countClassPoint.php');   // check.phpへ移動
-    exit(); //セッションを閉じる
-} else if(isset($_POST['4mi'])) {
-    header('Location: ./Class_check/4-mi_countClassPoint.php');   // check.phpへ移動
-    exit(); //セッションを閉じる
-} else if(isset($_POST['5ms'])) {
-    header('Location: ./Class_check/5-ms_countClassPoint.php');   // check.phpへ移動
-    exit(); //セッションを閉じる
-} else if(isset($_POST['5ic'])) {
-    header('Location: ./Class_check/5-ic_countClassPoint.php');   // check.phpへ移動
-    exit(); //セッションを閉じる
-} else if(isset($_POST['5br'])) {
-    header('Location: ./Class_check/5-br_countClassPoint.php');   // check.phpへ移動
-    exit(); //セッションを閉じる
-} else if(isset($_POST['5mi'])) {
-    header('Location: ./Class_check/5-mi_countClassPoint.php');   // check.phpへ移動
-    exit(); //セッションを閉じる
-} 
+    } else if (isset($_POST['13'])) {
+        $_SESSION['class'] = '1_3';
+
+    } else if (isset($_POST['14'])) {
+        $_SESSION['class'] = '1_4';
+
+    } else if (isset($_POST['21'])) {
+        $_SESSION['class'] = '2_1';
+
+    } else if (isset($_POST['22'])) {
+        $_SESSION['class'] = '2_2';
+
+    } else if (isset($_POST['23'])) {
+        $_SESSION['class'] = '2_3';
+
+    } else if (isset($_POST['24'])) {
+        $_SESSION['class'] = '2_4';
+
+    } else if (isset($_POST['3ms'])) {
+        $_SESSION['class'] = '3_ms';
+
+    } else if (isset($_POST['3ic'])) {
+        $_SESSION['class'] = '3_ic';
+
+    } else if (isset($_POST['3mi'])) {
+        $_SESSION['class'] = '3_mi';
+        
+    } else if (isset($_POST['3br'])) {
+        $_SESSION['class'] = '3_br';
+
+    } else if (isset($_POST['4ms'])) {
+        $_SESSION['class'] = '4_ms';
+
+    } else if (isset($_POST['4ic'])) {
+        $_SESSION['class'] = '4_ic';
+
+    } else if (isset($_POST['4mi'])) {
+        $_SESSION['class'] = '4_mi';
+
+    } else if (isset($_POST['4br'])) {
+        $_SESSION['class'] = '4_br';
+
+    } else if (isset($_POST['5ms'])) {
+        $_SESSION['class'] = '5_ms';
+
+    } else if (isset($_POST['5ic'])) {
+        $_SESSION['class'] = '5_ic';
+
+    } else if (isset($_POST['5mi'])) {
+        $_SESSION['class'] = '5_mi';
+
+    } else if (isset($_POST['5br'])) {
+        $_SESSION['class'] = '5_br';
+
+    }
+    header('Location: ./class_check.php');   // check.phpへ移動
+    exit();
+}
 
 
 ?>
