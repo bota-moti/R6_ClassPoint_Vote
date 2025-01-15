@@ -75,7 +75,7 @@ if (!empty($_POST)) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Buttons with Transparent Background</title>
-  <link rel="stylesheet" href="./css/style_index.css">
+  <link rel="stylesheet" href="test2.css">
   
 </head>
 <body>
@@ -92,27 +92,22 @@ if (!empty($_POST)) {
   <!-- ボタンのグリッド -->
   
   <form action="" method="POST" class="button-grid">
-    <button type="submit" class="btn" name="11">1-1</button>
-    <button type="submit" class="btn" name="12">1-2</button>
-    <button type="submit" class="btn" name="13">1-3</button>
-    <button type="submit" class="btn" name="14">1-4</button>
-    <button type="submit" class="btn" name="21">2-1</button>
-    <button type="submit" class="btn" name="22">2-2</button>
-    <button type="submit" class="btn" name="23">2-3</button>
-    <button type="submit" class="btn" name="24">2-4</button>
-    <button type="submit" class="btn" name="3ms">3-ms</button>
-    <button type="submit" class="btn" name="3ic">3-ic</button>
-    <button type="submit" class="btn" name="3mi">3-mi</button>
-    <button type="submit" class="btn" name="3br">3-br</button>
-    <button type="submit" class="btn" name="4ms">4-ms</button>
-    <button type="submit" class="btn" name="4ic">4-ic</button>
-    <button type="submit" class="btn" name="4mi">4-mi</button>
-    <button type="submit" class="btn" name="4br">4-br</button>
-    <button type="submit" class="btn" name="5ms">5-ms</button>
-    <button type="submit" class="btn" name="5ic">5-ic</button>
-    <button type="submit" class="btn" name="5mi">5-mi</button>
-    <button type="submit" class="btn" name="5br">5-br</button>
-
+    <button type="submit" class="btn" name="11">1の1</button>
+    <button>Button 2</button>
+    <button>Button 3</button>
+    <button>Button 4</button>
+    <button>Button 5</button>
+    <button>Button 6</button>
+    <button>Button 7</button>
+    <button>Button 8</button>
+    <button>Button 9</button>
+    <button>Button 10</button>
+    <button>Button 11</button>
+    <button>Button 12</button>
+    <button>Button 13</button>
+    <button>Button 14</button>
+    <button>Button 15</button>
+    <button>Button 16</button>
   </form>
 </body>
 </html>
