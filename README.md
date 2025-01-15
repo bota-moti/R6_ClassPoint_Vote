@@ -39,9 +39,12 @@
 ### ディレクトリ構成
 <pre>
 .
-├── xxx
-├── xxx
-└── README.md
+├── css
+  ├── kousen.png
+  └── style_index.css
+├── class_check.php
+├── index_home.php
+└── thank.php
 </pre>
 
 <!-- Treeコマンドを使ってディレクトリ構成を記載 -->
