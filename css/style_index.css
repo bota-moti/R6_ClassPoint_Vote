@@ -32,11 +32,12 @@ body {
 
 /* 上部のテキスト設定 */
 .header-text {
-  font-size: 2rem;
+  font-size: 90px;
   font-weight: bold;
   margin: 20px 0;
   text-align: center;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* 背景が明るい場合でも文字が見やすいように影を追加 */
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* 背景が明るい場合でも文字が見やすいように影を追加 */
 }
 
 /* ボタンのグリッド設定 */
@@ -53,7 +54,7 @@ button,
   input[type="submit"] {
       background-color: #ff9c72; /* 半透明で背景と調和 */
       /* color: #f3f1eb; */
-      color: #7e2600;
+      color: #ffffff;
       border: 1;
       border-color: #e28056;
       border-radius: 10px;
