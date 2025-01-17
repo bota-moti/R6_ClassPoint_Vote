@@ -41,12 +41,17 @@
 .
 ├── css
   ├── kousen.png
+  ├── thank.php
+  ├── class_check.php
   └── style_index.css
 ├── class_check.php
-├── index_home.php
+├── index_.php
 └── thank.php
 </pre>
 
-<!-- Treeコマンドを使ってディレクトリ構成を記載 -->
-
-
+### DB構成
+| カラム名 　　　　　　　| 型 |　　　　　|属性      |説明       |
+| --------------------- | ---------- |---------- |---------- |
+| PHP                   | 8.2.12    |             |          |
+| HTML                  | 4.2.1      |            |          |
+| CSS                   | 3.14.0     |            |          |
