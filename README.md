@@ -13,9 +13,12 @@
 まずスタート状態の画面としては下記の画像になる
 クラス２０個分の画像と投票ボタンを横４列、縦５列に配置
 ![Image](https://github.com/user-attachments/assets/6869d0f1-1a77-4da5-9ee0-5700bbcff8e5)
+
 ボタンを押すと画面遷移を行い、下記の画像の通りになり、確認画面へ
 ![Image](https://github.com/user-attachments/assets/39d574a5-f5d9-47a4-a2a2-a56e5255a248)
+
 ☆選ぶと下記の画面へ遷移
+![Image](https://github.com/user-attachments/assets/f7ca711d-622b-4cdb-afb0-46c2896f85ef)
 
 ２秒後にスタート状態の画面へ
 
