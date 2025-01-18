@@ -2,7 +2,7 @@
 session_start();
 
 if (!empty($_POST)) {
-    if (isset($_POST['11'])) {    // フォームの内容をセッションで保存
+    if (isset($_POST['11'])) {    
         $_SESSION['class'] = "1";
     
     } else if (isset($_POST['12'])) {
@@ -63,7 +63,7 @@ if (!empty($_POST)) {
         $_SESSION['class'] = '20';
 
     }
-    header('Location: ./class_check.php');   // check.phpへ移動
+    header('Location: ./class_check.php');   
     exit();
 }
 
@@ -79,19 +79,18 @@ if (!empty($_POST)) {
   
 </head>
 <body>
-  <!-- 背景画像とオーバーレイ -->
+  
   <div class="background-container">
     <div class="overlay"></div>
   </div>
   
-  <!-- 上部の説明文 -->
   <div class="header-text">
     クラス杯投票
     <br>
     好きなクラスを押してください
   </div>
   <br><br>
-  <!-- ボタンのグリッド -->
+  
   
   <form action="" method="POST" class="button-grid">
     <button type="submit" class="btn" name="11">1-1</button>

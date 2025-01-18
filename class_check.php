@@ -6,8 +6,8 @@ if (isset($_SESSION['class'])){
     $class = htmlspecialchars($_SESSION['class']);
 } 
 
-if (!empty($_POST)) {  //条件式によって中身が入力されているか確認している。
-    if (isset($_POST['star_1'])) {  //☆１を押された時のif文
+if (!empty($_POST)) {  
+    if (isset($_POST['star_1'])) {  
         $stmt = $mysqli->prepare("INSERT INTO ratings (class_id, rating) VALUES (?, ?)");
         $rating = 1;
         $stmt->bind_param("si", $class, $rating);
@@ -70,13 +70,60 @@ if (!empty($_POST)) {  //条件式によって中身が入力されているか�
             <div class="overlay"></div>
         </div>
         <div class="container">
-            <div class="class_name"> <!--divのクラスネームがClass_name-->
-            <?php echo "$class"; ?> <!--セッションから得た値を表示-->
+            <div class="class_name"> 
+                <br><br>
+            <?php 
+
+                if ($class == 1) {
+                    echo '1-1';
+                } else if ($class == 2) {
+                    echo '1-2';
+                } else if ($class == 3) {
+                    echo '1-3';
+                } else if ($class == 4) {
+                    echo '1-4';
+                } else if ($class == 5) {
+                    echo '2-1';
+                } else if ($class == 6) {
+                    echo '2-2';
+                } else if ($class == 7) {
+                    echo '2-3';
+                } else if ($class == 8) {
+                    echo '2-4';
+                } else if ($class == 9) {
+                    echo '3-MS';
+                } else if ($class == 10) {
+                    echo '3-IC';
+                } else if ($class == 11) {
+                    echo '3-MI';
+                } else if ($class == 12) {
+                    echo '3-BR';
+                } else if ($class == 13) {
+                    echo '4-MS';
+                } else if ($class == 14) {
+                    echo '4-IC';
+                } else if ($class == 15) {
+                    echo '4-MI';
+                } else if ($class == 16) {
+                    echo '4-BR';
+                } else if ($class == 17) {
+                    echo '5-MS';
+                } else if ($class == 18) {
+                    echo '5-IC';
+                } else if ($class == 19) {
+                    echo '5-MI';
+                } else if ($class == 20) {
+                    echo '5-BR';
+                } 
+                
+                
+
+            ?>
             </div> 
-            <div class="count">  <!--divのクラスネームがCount-->
-                <form action="" method="post">  <!--formアクション-->
-                    <input type="submit" name="star_1" value="☆" />  <!--ボタン作成　nameがstar_1になる。-->
-                    <input type="submit" name="star_2" value="☆☆" />  <!--以下同文-->
+            <div class="count">  
+                <form action="" method="post">  
+                    <input type="submit" name="star_1" value="☆" />  
+                    <input type="submit" name="star_2" value="☆☆" />  
                     <input type="submit" name="star_3" value="☆☆☆" />
                     <input type="submit" name="star_4" value="☆☆☆☆" />
                     <input type="submit" name="star_5" value="☆☆☆☆☆" />

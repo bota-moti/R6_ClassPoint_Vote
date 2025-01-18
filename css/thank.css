@@ -5,22 +5,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 50px; /* 文字を大きくする */
+    font-size: 50px; 
     color: #ffffff;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* テキストの色を白に設定 */
-    justify-content: center; /* 上下中央に配置 */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
+    justify-content: center; 
   }
   
-  /* 背景画像とオーバーレイレイヤーの設定 */
+ 
   .background-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('kousen.png') no-repeat center center fixed; /* 背景画像 */
-    background-size: cover; /* 画像を全画面に拡大 */
-    z-index: -1; /* 背景を下層に配置 */
+    background: url('kousen.png') no-repeat center center fixed; 
+    background-size: cover; 
+    z-index: -1; 
   }
   
   .overlay {
@@ -29,6 +29,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.5); /* 半透明の黒レイヤー */
+    background-color: rgba(255, 255, 255, 0.5);
     z-index: -1;
   }
