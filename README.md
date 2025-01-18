@@ -13,8 +13,8 @@
 まずスタート状態の画面としては下記の画像になる
 クラス２０個分の画像と投票ボタンを横４列、縦５列に配置
 ![Image](https://github.com/user-attachments/assets/6869d0f1-1a77-4da5-9ee0-5700bbcff8e5)
-*背景イラスト：令和６年度沖縄高専祭でのポスターより引用
-　　　　　　　 本作品は作者の○○様より掲載許可をいただいております。無断転載・二次利用を禁じます。
+*背景イラスト：令和６年度沖縄高専祭でのポスターより引用<br>
+本作品は作者の○○様より掲載許可をいただいております。無断転載・二次利用を禁じます。
 
 ボタンを押すと画面遷移を行い、下記の画像の通りになり、確認画面へ
 ![Image](https://github.com/user-attachments/assets/39d574a5-f5d9-47a4-a2a2-a56e5255a248)
@@ -56,13 +56,18 @@
 └── thank.php
 </pre>
 
-### DB構成
-#### テーブル設計
+### DBテーブル設計
 
-##### 学級情報テーブル(class)
+##### 学級情報テーブル(classes)
 | カラム名  | 型 | 属性   | 説明 |
 | --------------------- | ----------  |----------   |----------   |
 | class_id              | INT         | PRIMARY KEY | 学級ID      | 
 | class_name            | VARCHAR(30) | NOT NULL    | 学級名      |
 
 ##### 評価テーブル(ratings)
+| カラム名  | 型 | 属性   | 説明 |
+| --------------------- | ----------  |----------   |----------   |
+| rating_id              | INT         | PRIMARY KEY | 学級ID      | 
+| class_id               | INT         | FOREIGN KEY    | 評価対象の学級ID(classes)      |
+| class_name            | TINYINT | NOT NULL CHECK (rating BETWEEN 1 AND 5)    | 評価(1~5)      |
+
