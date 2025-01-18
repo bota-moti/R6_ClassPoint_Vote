@@ -32,12 +32,12 @@ body {
 
 /* 上部のテキスト設定 */
 .header-text {
-  font-size: 90px;
+  font-size: 60px;
   font-weight: bold;
-  margin: 20px 0;
+  margin: 90px 0 20px 0; /* 上部に100pxの空白を追加 */
   text-align: center;
   color: #ffffff;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* 背景が明るい場合でも文字が見やすいように影を追加 */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* 背景が明るい場合でも文字が見やすいように影を追加 */
 }
 
 /* ボタンのグリッド設定 */
@@ -45,8 +45,9 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 5列 */
   gap: 20px; /* ボタン間の間隔を設定 */
-  width: 90%;
-  max-width: 1200px; /* 最大幅を設定 */
+  width: 100%;
+  max-width: 1440px; /* 最大幅を設定 */
+  height: 530px; /* グリッド全体の高さを指定 */
 }
 
 /* ボタンの基本スタイル */
@@ -62,9 +63,9 @@ button,
       font-weight: bold;
       cursor: pointer;
       transition: transform 0.3s, background-color 0.3s;
-      padding: 20px; /* ボタンの内側の余白を広く設定 */
+      padding: 10px; /* ボタンの内側の余白を広く設定 */
       width: 100%; /* グリッド列全体に広げる */
-      height: 100px; /* 明示的に高さを指定 */
+      height: 80px; /* 明示的に高さを指定 */
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* 影を追加してボタンを際立たせる */
 }
 

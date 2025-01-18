@@ -83,12 +83,14 @@ if (!empty($_POST)) {
   <div class="background-container">
     <div class="overlay"></div>
   </div>
-  <br><br><br><br><br><br>
+  
   <!-- 上部の説明文 -->
   <div class="header-text">
-    Welcome to the Button Grid!
+    クラス杯投票
+    <br>
+    好きなクラスを押してください
   </div>
-  <br><br><br><br><br><br>
+  <br><br>
   <!-- ボタンのグリッド -->
   
   <form action="" method="POST" class="button-grid">

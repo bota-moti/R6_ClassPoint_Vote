@@ -6,7 +6,8 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 50px; /* 文字を大きくする */
-    color: #434343; /* テキストの色を白に設定 */
+    color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* テキストの色を白に設定 */
     justify-content: center; /* 上下中央に配置 */
   }
   
