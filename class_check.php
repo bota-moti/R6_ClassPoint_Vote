@@ -1,54 +1,135 @@
 <?php
-$mysqli = new mysqli('localhost:3305', 'root', '', 'count_classpoint');  //DBとの接続
-session_start(); //セッションの開始
+$mysqli = new mysqli('localhost:3305', 'root', '', 'class_point_vote');  //DBとの接続
+session_start(); 
 
 if (isset($_SESSION['class'])){
     $class = htmlspecialchars($_SESSION['class']);
 } 
 
-if (!empty($_POST)) {  //条件式によって中身が入力されているか確認している。
-    if (isset($_POST['star_1'])) {  //☆１を押された時のif文
-    $sql = "UPDATE $class SET count = count + 1 WHERE id = 1";  //sql文を用いて4_miというテーブルの中にあるidの値が1のカラムに値を1+するという宣言
-    $res = $mysqli->query($sql);  //queryを用いてsql文を使用
-    //下記コメントアウトの原因:上記のsql文を使用する前にサイト移動しているためDBへ値が更新されない
-    header('Location: ./thank.php'); //headerを用いてthank.phpへ移動。
-    } else if (isset($_POST['star_2'])) { //同文
-    $sql = "UPDATE $class SET count = count + 1 WHERE id = 2";
-    $res = $mysqli->query($sql);
-    header('Location: ./thank.php');
+if (!empty($_POST)) {  
+    if (isset($_POST['star_1'])) {  
+        $stmt = $mysqli->prepare("INSERT INTO ratings (class_id, rating) VALUES (?, ?)");
+        $rating = 1;
+        $stmt->bind_param("si", $class, $rating);
+        if (!$stmt->execute()) {
+            $stmt->error;
+        }
+        $stmt->close();
+        header('Location: ./thank.php'); 
+
+    } else if (isset($_POST['star_2'])) { 
+        $stmt = $mysqli->prepare("INSERT INTO ratings (class_id, rating) VALUES (?, ?)");
+        $rating = 2;
+        $stmt->bind_param("si", $class, $rating);
+        if (!$stmt->execute()) {
+        $stmt->error;
+        }
+        $stmt->close();
+        header('Location: ./thank.php'); 
     } else if (isset($_POST['star_3'])) {
-    $sql = "UPDATE $class SET count = count + 1 WHERE id = 3";
-    $res = $mysqli->query($sql);
-    header('Location: ./thank.php');
+        $stmt = $mysqli->prepare("INSERT INTO ratings (class_id, rating) VALUES (?, ?)");
+        $rating = 3;
+        $stmt->bind_param("si", $class, $rating);
+        if (!$stmt->execute()) {
+        $stmt->error;
+        }
+        $stmt->close();
+        header('Location: ./thank.php'); 
     } else if (isset($_POST['star_4'])) {
-    $sql = "UPDATE $class SET count = count + 1 WHERE id = 4";
-    $res = $mysqli->query($sql);
-    header('Location: ./thank.php');
+        $stmt = $mysqli->prepare("INSERT INTO ratings (class_id, rating) VALUES (?, ?)");
+        $rating = 4;
+        $stmt->bind_param("si", $class, $rating);
+        if (!$stmt->execute()) {
+        $stmt->error;
+        }
+        $stmt->close();
+        header('Location: ./thank.php'); 
     } else if (isset($_POST['star_5'])) {
-    $sql = "UPDATE $class SET count = count + 1 WHERE id = 5";
-    $res = $mysqli->query($sql);
-    header('Location: ./thank.php');
-}
+        $stmt = $mysqli->prepare("INSERT INTO ratings (class_id, rating) VALUES (?, ?)");
+        $rating = 5;
+        $stmt->bind_param("si", $class, $rating);
+        if (!$stmt->execute()) {
+        $stmt->error;
+        }
+        $stmt->close();
+        header('Location: ./thank.php'); 
+    }
 }
 ?>
 
 <!DOCTYPE html>
 <html>
     <head>
-        <body>
-            <div class="Class_name"> <!--divのクラスネームがClass_name-->
-                <?php echo "$class"; ?> <!--セッションから得た値を表示-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Buttons with Transparent Background</title>
+        <link rel="stylesheet" href="./css/style_class_check.css">
+    </head>
+    <body>
+        <div class="background-container">
+            <div class="overlay"></div>
+        </div>
+        <div class="container">
+            <div class="class_name"> 
+                <br><br>
+            <?php 
+
+                if ($class == 1) {
+                    echo '1-1';
+                } else if ($class == 2) {
+                    echo '1-2';
+                } else if ($class == 3) {
+                    echo '1-3';
+                } else if ($class == 4) {
+                    echo '1-4';
+                } else if ($class == 5) {
+                    echo '2-1';
+                } else if ($class == 6) {
+                    echo '2-2';
+                } else if ($class == 7) {
+                    echo '2-3';
+                } else if ($class == 8) {
+                    echo '2-4';
+                } else if ($class == 9) {
+                    echo '3-MS';
+                } else if ($class == 10) {
+                    echo '3-IC';
+                } else if ($class == 11) {
+                    echo '3-MI';
+                } else if ($class == 12) {
+                    echo '3-BR';
+                } else if ($class == 13) {
+                    echo '4-MS';
+                } else if ($class == 14) {
+                    echo '4-IC';
+                } else if ($class == 15) {
+                    echo '4-MI';
+                } else if ($class == 16) {
+                    echo '4-BR';
+                } else if ($class == 17) {
+                    echo '5-MS';
+                } else if ($class == 18) {
+                    echo '5-IC';
+                } else if ($class == 19) {
+                    echo '5-MI';
+                } else if ($class == 20) {
+                    echo '5-BR';
+                } 
+                
+                
+
+            ?>
             </div> 
-            <div class="Count">  <!--divのクラスネームがCount-->
-                <form action="" method="post">  <!--formアクション-->
-                    <input type="submit" name="star_1" value="☆" />  <!--ボタン作成　nameがstar_1になる。-->
-                    <input type="submit" name="star_2" value="☆☆" />  <!--以下同文-->
+            <div class="count">  
+                <form action="" method="post">  
+                    <input type="submit" name="star_1" value="☆" />  
+                    <input type="submit" name="star_2" value="☆☆" />  
                     <input type="submit" name="star_3" value="☆☆☆" />
                     <input type="submit" name="star_4" value="☆☆☆☆" />
                     <input type="submit" name="star_5" value="☆☆☆☆☆" />
                 </form>
-            </div>
-            
-        </body>
-    </head>
+            </div>  
+        </div>
+         
+    </body>   
 </html>

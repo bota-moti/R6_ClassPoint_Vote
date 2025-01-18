@@ -3,21 +3,21 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   display: flex;
-  flex-direction: column; /* 上部テキストとボタンを縦方向に配置 */
+  flex-direction: column; 
   align-items: center;
-  color: #eae9e1; /* テキストの色を白に設定 */
+  color: #eae9e1; 
 }
 
-/* 背景画像とオーバーレイレイヤーの設定 */
+
 .background-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('kousen.png') no-repeat center center fixed; /* 背景画像 */
-  background-size: cover; /* 画像を全画面に拡大 */
-  z-index: -1; /* 背景を下層に配置 */
+  background: url('kousen.png') no-repeat center center fixed; 
+  background-size: cover; 
+  z-index: -1; 
 }
 
 .overlay {
@@ -26,34 +26,35 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.5); /* 半透明の黒レイヤー */
+  background-color: rgba(255, 255, 255, 0.5); 
   z-index: -1;
 }
 
-/* 上部のテキスト設定 */
-.header-text {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 20px 0;
-  text-align: center;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* 背景が明るい場合でも文字が見やすいように影を追加 */
-}
 
-/* ボタンのグリッド設定 */
+.header-text {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 90px 0 20px 0; 
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
+
+}
 .button-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 5列 */
-  gap: 20px; /* ボタン間の間隔を設定 */
-  width: 90%;
-  max-width: 1200px; /* 最大幅を設定 */
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+  width: 100%;
+  max-width: 1440px; 
+  height: 530px; 
 }
 
 /* ボタンの基本スタイル */
 button,
   input[type="submit"] {
-      background-color: #ff9c72; /* 半透明で背景と調和 */
+      background-color: #ff9c72; 
       /* color: #f3f1eb; */
-      color: #7e2600;
+      color: #ffffff;
       border: 1;
       border-color: #e28056;
       border-radius: 10px;
@@ -61,13 +62,13 @@ button,
       font-weight: bold;
       cursor: pointer;
       transition: transform 0.3s, background-color 0.3s;
-      padding: 20px; /* ボタンの内側の余白を広く設定 */
-      width: 100%; /* グリッド列全体に広げる */
-      height: 100px; /* 明示的に高さを指定 */
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* 影を追加してボタンを際立たせる */
+      padding: 10px; 
+      width: 100%; 
+      height: 80px; 
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
 }
 
-/* ボタンのホバー効果 */
+
 button:hover,
 input[type="submit"]:hover {
   transform: scale(1.05);

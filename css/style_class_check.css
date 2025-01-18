@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column; 
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  }
+  
+  
+  .background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('kousen.png') no-repeat center center fixed; 
+  background-size: cover; 
+  z-index: -1; 
+  }
+  
+  .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); 
+  z-index: -1;
+  }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  height: 500px;
+  text-align: center;
+  padding-top: 20vh; 
+}
+
+
+.class_name {
+  font-size: 80px;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  margin-bottom: 30px;
+  font-weight: 550; 
+}
+
+.count input[type="submit"] {
+  font-size: 35px;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.8); 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 530; 
+}
+
+.count input[type="submit"]:hover {
+  background-color: rgba(255, 255, 255, 1); 
+}
