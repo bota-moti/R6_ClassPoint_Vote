@@ -64,7 +64,7 @@ PHP、MySQLを
 | カラム名  | 型 | 属性   | 説明 |
 | --------------------- | ----------  |----------   |----------   |
 | class_id              | INT         | PRIMARY KEY | 学級ID      | 
-| class_name            | VARCHAR(30) | NOT NULL    | 学級名      |
+| class_name            | VARCHAR(50) | NOT NULL    | 学級名      |
 
 ##### 評価テーブル(ratings)
 | カラム名  | 型 | 属性   | 説明 |
