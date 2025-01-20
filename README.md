@@ -73,3 +73,5 @@ PHP、MySQLを
 | class_id               | INT         | FOREIGN KEY    | 評価対象の学級ID(classes)      |
 | class_name            | TINYINT | NOT NULL CHECK (rating BETWEEN 1 AND 5)    | 評価(1~5)      |
 
+![Image](https://github.com/user-attachments/assets/ac242ff6-02c6-4a79-aafd-8e8c31219d48)
+
